@@ -31,7 +31,7 @@ export default function Signin() {
                 <input 
                 value={password}
                 onChange={(e)=>{setpassword(e.target.value)}}
-                className='bg-transparent border-slate-500 border-[1.5px] rounded-lg py-[5px] pl-[24px] text-sm text-[#A3AED0]' type='text' placeholder='Min. 8 characters'/>
+                className='bg-transparent border-slate-500 border-[1.5px] rounded-lg py-[5px] pl-[24px] text-sm text-[#A3AED0]' type='password' placeholder='Min. 8 characters'/>
                 </div>
               
               <div className="flex justify-between text-sm">
