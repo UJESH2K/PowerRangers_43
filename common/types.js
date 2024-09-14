@@ -12,7 +12,7 @@ const signIn = z.object({
   password: z.string(),
 });
 
-const update = z.object({
+const updateWare = z.object({
   password: z.string().optional(),
   firstName: z.string().optional(),
   lastName: z.string().optional(),
@@ -21,4 +21,5 @@ const update = z.object({
 module.exports = {
   signUp,
   signIn,
+  updateWare,
 };
