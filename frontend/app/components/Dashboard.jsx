@@ -1,10 +1,7 @@
 import React from 'react';
 import { Bell, Home, User, ChevronDown, Dumbbell, Sandwich, FileBarChart } from 'lucide-react';
 import Dropdown from './Dropdown';
-
-function fetchPython(){
-  
-}
+import Link from 'next/link';
 
 const ExerciseCard = ({ icon, title, accuracy }) => (
   <div className="bg-white rounded-lg p-4 shadow">
@@ -19,9 +16,11 @@ const ExerciseCard = ({ icon, title, accuracy }) => (
     <div className="w-full bg-gray-200 rounded-full h-2.5">
       <div className="bg-black h-2.5 rounded-full" style={{ width: `${accuracy}%` }}></div>
     </div>
-    <button className="w-full mt-4 bg-black text-white py-2 rounded-md font-semibold">
+    <Link 
+      href={"http://localhost:8888/notebooks/Desktop/MediaPipePoseEstimation/Media%20Pipe%20Pose%20Tutorial.ipynb"}
+    className="w-full mt-4 bg-black text-white py-2 rounded-md font-semibold">
       Analyze
-    </button>
+    </Link>
     <button className="w-full mt-4 bg-black text-white py-2 rounded-md font-semibold">
       View Details
     </button>
